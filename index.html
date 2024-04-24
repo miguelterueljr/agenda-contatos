@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Contatos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="./images/phone-icon.png" alt="Icone de um telefone com fundo azul" class="header__image" />
+      <h1 class="header__title">Contatos</h1>
+      <img src="./images/phone-icon.png" alt="Icone de um telefone com fundo azul" class="header__image" />
+    </header>
+
+    <main class="main">
+      <form class="form">
+        <h2>Adicionar Contatos</h2>
+        <input type="text" placeholder="Nome e sobrenome" class="form__input" required id="name"/>
+        <input type="tel" placeholder="Telefone:(xxXXXXXXXXX)" class="form__input" required id="number" />
+        
+        <div class="form__check-container">
+          <label class="form__label">Whatsapp ?</label>
+          <input type="checkbox" class="form__input form__check"/>
+        </div>
+        <button class="form__button">Adicionar +</button>
+      </form>
+      <hr />
+
+      <table class="table">
+        <thead class="table__head">
+          <tr class="table__columns">
+            <th class="table__title">Nome:</th>
+            <th class="table__title">Telefone:</th>
+            <th class="table__title">Whatsapp</th>
+          </tr>
+          
+        </thead>
+        <tbody>
+          <!--
+            <tr class="table__columns table__columns-contact">
+              <td class="table__content">Miguel</td>
+              <td class="table__content">21967098912</td>
+              <td class="table__content"><a href="https://wa.me/21988380757" target="_blank"><img src="./images/whatsapp.png" alt="icone do app whatsapp" class="table__image"></a></td>
+            </tr>
+
+
+          -->
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
